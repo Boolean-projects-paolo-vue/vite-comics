@@ -12,7 +12,7 @@
 @use './../assets/styles/partials/variabels.scss' as *;  
     .container{
         height: 10rem;
-        max-width: 1500px;
+        max-width: 1350px;
         margin: auto;
         display: flex;
         align-items: center;

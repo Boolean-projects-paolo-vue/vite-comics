@@ -35,8 +35,8 @@
     }
 
     .sub-container{
-        height: 6rem;
-        max-width: 1500px;
+        height: 7rem;
+        max-width: 1350px;
         margin: auto;
         @include my-display-flex-between;
         @include font-arial-600-15;
@@ -47,7 +47,7 @@
     }
 
     .logo{
-        height: 55px;
+        height: 65px;
     }
     .list{
         @include my-display-flex-row;

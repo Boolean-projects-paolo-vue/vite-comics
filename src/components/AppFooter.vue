@@ -92,7 +92,7 @@
     }
     
     .container{
-         max-width: 1500px;
+         max-width: 1450px;
          margin: auto;
     }
 
@@ -107,11 +107,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .container.five li{
-        padding: 0.5rem;
         margin: 0.5rem;
     }
 
@@ -133,6 +132,8 @@
     }
     .immagine{
         height: 65px;
+        margin: 0.5rem;
+        padding: 0.5rem;
     }
 
     .immagine.visa{
@@ -143,6 +144,7 @@
 
     .central{
         background-image: url(./../assets/vue-dc-comics-1/img/footer-bg.jpg);
+        
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -159,13 +161,13 @@
     .title-footer{
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 1rem;
     }
     .punto{
         color: gray;
         margin-bottom: 0.5rem;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .img_big{
@@ -181,16 +183,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1500px;
+        max-width: 1350px;
         margin: auto;
-        height: 8rem;
+        height: 6rem;
         button {
             background-color: transparent;
             color: white;
             border: 2px solid rgb(12, 119, 234);
             padding: 1rem;
             .button_sign{
-                font-size: 18px;
+                font-size: 15px;
             }
         }
         
@@ -202,7 +204,7 @@
         h3 {
             color: rgb(12, 119, 234);
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }
