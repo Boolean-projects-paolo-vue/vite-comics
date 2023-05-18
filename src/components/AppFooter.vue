@@ -67,8 +67,18 @@
             <img src="./../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="" class="img_big">    
         </div>
     </section>
-    <section>
-
+    <section class="bottom_social">
+        <div class="socials">
+            <button><span class="button_sign">SIGN-UP NOW!</span></button>
+            <div class="social-button">
+                <h3>FOLLOW US</h3>
+                <img src="./../assets/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                <img src="./../assets/vue-dc-comics-1/img/footer-twitter.png" alt="">
+                <img src="./../assets/vue-dc-comics-1/img/footer-youtube.png" alt="">
+                <img src="./../assets/vue-dc-comics-1/img/footer-pinterest.png" alt="">
+                <img src="./../assets/vue-dc-comics-1/img/footer-periscope.png" alt="">
+            </div>
+            </div>
     </section>
 </template>
 
@@ -165,5 +175,36 @@
         bottom: 0rem;
     }
 
+    .bottom_social{
+    background-color: rgb(48, 48, 48);
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1500px;
+        margin: auto;
+        height: 8rem;
+        button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(12, 119, 234);
+            padding: 1rem;
+            .button_sign{
+                font-size: 18px;
+            }
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        h3 {
+            color: rgb(12, 119, 234);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    }
+}
 
 </style>
