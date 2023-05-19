@@ -61,14 +61,14 @@
                     <img src="./../assets/vue-dc-comics-1/img/dc-logo.png" alt="" class="logo">
                 </div>
                 <div>
-                    <ul class="list">
+                    <div class="list">
                         <AppNavbar 
                             v-for="index in ArrayHarder" 
                             :key="index.title"
                             :title="index.title"
                             :link="index.link"
                         />
-                    </ul>   
+                    </div>   
                 </div>
             </div>
         </div>
