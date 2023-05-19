@@ -3,6 +3,9 @@
 </script>
 
 <template>
+
+    <!-- /***********************************************Parte Blu - Footer***********************************************/ -->
+
     <section class="blue">
         <div class="container five">
            <ul class="list">
@@ -15,6 +18,9 @@
         </div>
 
     </section>
+
+    <!-- /************************************************Link e Logo - Footer*********************************************/ -->
+
     <section class="central">
         <div class="container bottom">
             
@@ -63,10 +69,12 @@
                 </div>
             </div>
             
-            
             <img src="./../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="" class="img_big">    
         </div>
     </section>
+
+    <!-- /*************************************Sign-up and Follow - Footer*************************************************/ -->
+
     <section class="bottom_social">
         <div class="socials">
             <button><span class="button_sign">SIGN-UP NOW!</span></button>
@@ -120,14 +128,12 @@
         background-color: rgb(2, 130, 240);
     }
     .list{
-        display: flex;
-        align-items: center;
+        @include my-display-flex-center;
         flex-direction: row;
         height: 100%;
     }
     .point{
-        display: flex;
-        align-items: center;
+        @include my-display-flex-center;
         height: 100%;
     }
     .immagine{
@@ -144,13 +150,13 @@
 
     .central{
         background-image: url(./../assets/vue-dc-comics-1/img/footer-bg.jpg);
-        
+        background-repeat: no-repeat;
+        background-size: cover;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     .sub-container.first_one{
-        display: flex;
-        flex-direction: row;
+        @include my-display-flex-row;
         padding: 2rem;
         height: 80%;
     }
@@ -180,9 +186,7 @@
     .bottom_social{
     background-color: rgb(48, 48, 48);
     .socials {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-align-justify-between;
         max-width: 1350px;
         margin: auto;
         height: 6rem;
@@ -197,8 +201,7 @@
         }
         
         .social-button {
-            display: flex;
-            align-items: center;
+            @include my-display-flex-center;
             gap: 1rem;
         }
         h3 {

@@ -8,12 +8,18 @@
     align-items: center;
 };
 
+@mixin flex-align-justify-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @mixin my-display-flex-row {
     display: flex;
     flex-direction: row;
 };
 
-@mixin diplay-flex-center {
+@mixin my-display-flex-center {
     display: flex;
     align-items: center;
 };

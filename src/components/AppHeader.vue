@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="container">
+        <div class="container">
             <div class="sub-container">
                 <div>
                     <img src="./../assets/vue-dc-comics-1/img/dc-logo.png" alt="" class="logo">
@@ -24,7 +24,10 @@
                 </div>
             </div>
         </div>
+        <div class="jumbo">
 
+        </div>
+    
 </template>
 
 <style lang="scss" scoped>
@@ -44,6 +47,10 @@
 
     .container .sub-container li{
         padding: 0.5rem;
+    }
+    .jumbo{
+        background-image: url(./../assets/vue-dc-comics-1/img/jumbotron.jpg);
+        height: 25rem;
     }
 
     .logo{
