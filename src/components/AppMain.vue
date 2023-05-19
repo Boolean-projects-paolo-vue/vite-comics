@@ -1,4 +1,3 @@
-
 <script>
     import CardComic from './CardComic.vue';
     export default{
@@ -89,15 +88,15 @@
 <template>
     <section class="background">
         <div class="container">
-            <div v-for="(card, index) in arrComics.items" :key="index">
-                <CardComic 
-                :image="card.thumb" 
-                :title="card.series" 
-                :price="card.price" 
-                />
-            </div>
-            
+            <CardComic
+            v-for="card in arrComics" 
+            :key="card.series" 
+            :image="card.thumb" 
+            :title="card.series" 
+            :price="card.price" 
+            />
         </div>
+        <button class="button_load">LOAD MORE</button>
     </section>
  
 </template>
@@ -107,12 +106,33 @@
 
     .background{
     background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
         .container{
-            max-width: 1350px;
+            max-width: 1400px;
+            height: 35rem;
+            padding: 1.5rem;
             margin: auto;
-            color: white
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         };
-    }
+    };
+    
+    .button_load{
+        padding: 0.5rem; 
+        padding-inline: 3.5rem;
+        font-weight: 600;
+        color:white;
+        background-color: rgb(12, 119, 234);
+        margin: 1rem;
+        border:0;          
+    };
+
    
 
 </style>
